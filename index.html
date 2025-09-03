@@ -60,7 +60,7 @@
       align-items: center;
       width: 100%;
       background-color: #008080;
-      color: #ffffff;
+      color: rgb(255, 255, 255);
     }
 
     #hero img {
@@ -98,6 +98,9 @@
       gap: 5px;
     }
 
+    .counts {
+      margin-top: 10px;
+    }
 
     .details {
       padding: 40px;
@@ -119,11 +122,6 @@
           rgba(0, 0, 0, 0) 70%);
       opacity: 0;
       transition: opacity 0.3s ease;
-    }
-
-    .count {
-      font-size: small;
-      padding-top: 10px;
     }
 
     @media (min-width: 700px) {
@@ -178,14 +176,12 @@
     <div class="c-flex details">
       <h1>😎 I am SUN</h1>
       <div class="sub">I am a student, creator and a photographer!</div>
-      <div>
-        <a href='https://www.free-counters.org/'>www.free-Counter.org</a>
-        <script type='text/javascript'
-          src='https://www.freevisitorcounters.com/auth.php?id=2a989106c724ee039ba24b7884c440802e53da40'></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1385110/t/9"></script>
-      </div>
-      <div class="count">
-        Visits
+      <div class="c-flex counter">
+        <div class="counts">
+          <a href="https://hits.sh/sunszone.github.io/" target="_blank">
+            <img alt="Hits" src="https://hits.sh/sunszone.github.io.svg?style=flat-square&label=Visits&color=008080" />
+          </a>
+        </div>
       </div>
     </div>
   </section>

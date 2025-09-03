@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun's first website!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Kode Mono", monospace;
+        font-optical-sizing: auto;
+        background-color: #90cf90;
+        cursor: url("img/pumkin.png") 16 16, auto;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(5, 93, 5);
+        font-weight: bold;
+      }
+      header {
+        font-weight: bold;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #008080;
+        color: #ffffff;
+      }
+      #hero img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+      }
+      #hero {
+        width: 100%;
+      }
+      .heroContainer {
+        display: block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .c-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .sub {
+        text-align: center;
+      }
+      .info {
+        padding: 20px;
+        display: block;
+      }
+      .details {
+        padding: 20px;
+      }
+      @media (min-width: 700px) {
+        #hero img {
+          height: 80vh;
+        }
+        .heroContainer {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+        .info {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <marquee> 🌞🌞🌞 Hello World This is Sun! 🌞🌞🌞 </marquee>
+    </header>
+
+    <section class="heroContainer">
+      <div id="hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/sun_1.jpg" class="d-block" alt="Suns first photo!" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sun_2.jpg" class="d-block" alt="Suns second photo!" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sun_3.jpg" class="d-block" alt="Suns third photo!" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="c-flex details">
+        <h1>😎 I am SUN</h1>
+        <div class="sub">I am a student, creator and a photographer!</div>
+      </div>
+    </section>
+
+    <div class="info">
+      <div>
+        <a href="https://www.youtube.com/@thesunzone" target="_blank">
+          <i class="fab fa-youtube"></i> Go to My Youtube Chanel
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/sanoarulislam.sun" target="_blank">
+          <i class="fab fa-facebook"></i> Go to My Facebook
+        </a>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

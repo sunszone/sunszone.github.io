@@ -121,10 +121,6 @@
       transition: opacity 0.3s ease;
     }
 
-    .details:hover::before {
-      opacity: 1;
-    }
-
     .count {
       font-size: small;
       padding-top: 10px;
@@ -133,6 +129,10 @@
     @media (min-width: 700px) {
       #hero img {
         height: 80vh;
+      }
+
+      .details:hover::before {
+        opacity: 1;
       }
 
       .heroContainer {

@@ -1,0 +1,123 @@
+body {
+    color: black;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    background-color: #90cf90;
+    cursor: url("/img/pumkin.png") 16 16, auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(5, 93, 5);
+    font-weight: bold;
+}
+
+header {
+    font-weight: bold;
+    font-size: 22px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #008080;
+    color: rgb(255, 255, 255);
+}
+
+#hero img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#hero {
+    width: 100%;
+}
+
+.heroContainer {
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.c-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub {
+    text-align: center;
+}
+
+.info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.counts {
+    margin-top: 10px;
+}
+
+.details {
+    padding: 40px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle 150px at var(--x, 50%) var(--y, 50%),
+            rgba(255, 215, 0, 0.6),
+            rgba(0, 0, 0, 0) 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+@media (min-width: 700px) {
+    #hero img {
+        height: 80vh;
+    }
+
+    .details:hover::before {
+        opacity: 1;
+    }
+
+    .heroContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .info {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.game {
+    height: calc(100dvh - 50px);
+    width: 100%;
+    margin: 0;
+}
+
+.pageHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px auto;
+    justify-content: unset;
+    padding-left: 10px;
+}

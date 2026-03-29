@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "font";
+  src: url("font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "font", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(76, 16, 16);
+}
+
+#main {
+  border-radius: 10px;
+  height: 700px;
+  width: 1080px;
+  background: url("../res/bg.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+#bird {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+#falcon {
+  position: absolute;
+  top: 10%;
+  left: 110%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  font-size: 60px;
+  padding: 20px;
+  color: rgb(40, 207, 40);
+  text-shadow: 2px 2px rgb(89, 89, 192);
+}
+
+#score,
+#level,
+.separator {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.stats {
+  display: flex;
+}
